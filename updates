@@ -6,3 +6,5 @@ node_modules/
 git commit -m "Initial commit: Production-ready Docker Compose stack"
 git branch -M main
 🚨 3. Authentication Shutdown (Password authentication is not supported)The final boss error appeared when running git push:remote: Invalid username or token. Password authentication is not supported...The Cause: GitHub completely disabled standard passwords for command-line security. It expects an encrypted Personal Access Token (PAT) instead.The Solution:Generated a fresh token via GitHub Settings -> Developer Settings -> Personal Access Tokens (Classic) with the repo scope scope checked.Cleared the invalid saved credentials out of Windows via Credential Manager -> Windows Credentials -> Remove git:https://github.com.Re-ran git push -u origin main and pasted the secret token (ghp_...) directly into the password prompt box!🌟 Where You Stand Right NowYour environment is now in a pristine state:The Infrastructure: Running flawlessly in the background via docker compose up -d.The Registry Loop: Working perfectly on port 5100.The Backup: Securely pushed and version-controlled inside your GitHub account (KDumpala)!
+
+![app](<Screenshot 2026-07-11 040847.png>)
