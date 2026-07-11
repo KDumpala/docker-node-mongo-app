@@ -1,3 +1,5 @@
+<img width="1121" height="606" alt="Image" src="https://github.com/user-attachments/assets/2462fd18-7fe5-4a42-aa04-22bf1407274c" />
+
 ## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using 
