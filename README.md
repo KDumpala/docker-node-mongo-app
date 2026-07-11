@@ -1,5 +1,6 @@
 <img width="1121" height="606" alt="Image" src="https://github.com/user-attachments/assets/2462fd18-7fe5-4a42-aa04-22bf1407274c" />
 
+
 ## demo app - developing with Docker
 
 This demo app shows a simple user profile app set up using 
@@ -72,6 +73,27 @@ Step 5: access the nodejs application from browser
 The dot "." at the end of the command denotes location of the Dockerfile.
 
 
+1. Named Volumes (Best for Production/Databases)Docker completely manages the storage location on your hard drive.CLI Example (MongoDB)PowerShell# Create a volume
+docker volume create mongo-data
+
+# Run container attached to the volume
+docker run -d --name db -v mongo-data:/data/db mongo
+Docker Compose ExampleYAMLservices:
+  mongo:
+    image: mongo
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+2. Bind Mounts (Best for Live Local Development)Maps a specific, exact folder on your computer directly into the container.CLI Example (Node.js)PowerShelldocker run -d -p 3000:3000 -v "C:\my-app:/usr/src/app" node:24-slim
+Docker Compose ExampleYAMLservices:
+  node-app:
+    image: node:24-slim
+    volumes:
+      - "./app:/usr/src/app" # 🔄 Live syncs your local folder
+3. Essential Volume CommandsActionCommandList all volumesdocker volume lsInspect a volume (Find path)docker volume inspect <volume_name>Delete a specific volumedocker volume rm <volume_name>Wipe all unused volumesdocker volume prune
+
 Using Floci 
 
 aws s3 mb s3://my-data-bucket -- run this to check if teh connection is success 
@@ -83,6 +105,4 @@ docker tag my-app:1.0 localhost:4566/my-app:1.0
 docker push localhost:4566/my-app:1.0
 
 
-Git
-
-git remote add origin https://github.com/KDumpala/docker-node-mongo-app.git
+ 
