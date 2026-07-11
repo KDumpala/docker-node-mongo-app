@@ -1,0 +1,5 @@
+aws ecr create-repository --repository-name my-app                                          
+
+docker tag my-app:1.0 localhost:4566/my-docker-app:1.0
+
+docker push localhost:4566/my-docker-app:1.0
