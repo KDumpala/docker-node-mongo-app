@@ -79,3 +79,8 @@ aws ecr create-repository --repository-name my-app
 docker tag my-app:1.0 localhost:4566/my-app:1.0
 
 docker push localhost:4566/my-app:1.0
+
+
+Git
+
+git remote add origin https://github.com/KDumpala/docker-node-mongo-app.git
