@@ -18,7 +18,9 @@ Basic commands
 Docker basic commands keep them handy
 
 Docker --version
+
 docker login
+
 docker search <imagename>
 
 
