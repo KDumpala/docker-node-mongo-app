@@ -17,11 +17,29 @@ Basic commands
 
 Docker basic commands keep them handy
 
-Docker --version
+    Docker --version
 
-docker login
+    docker login
 
-docker search <imagename>
+    docker search <imagename>
+    
+    docker images
+    
+    docker images ls
+
+    docker create imagename
+
+    docker ps
+
+    docker ps -a
+
+    docker start contnr_ID
+
+    docker stop contnr_ID
+
+
+
+
 
 
 ### With Docker
