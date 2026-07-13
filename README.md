@@ -31,11 +31,19 @@ Docker basic commands keep them handy
 
     docker ps
 
-    docker ps -a
+    docker ps -a --> shows images in all the states    
 
     docker start contnr_ID
 
     docker stop contnr_ID
+
+    docker create --name image_name -- > costum name
+
+    docker stop image_name
+
+    docker run --name image_name image --- > container is created, downloaded, started at the same time.
+
+    
 
 
 
