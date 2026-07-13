@@ -12,13 +12,17 @@ This demo app shows a simple user profile app set up using
 
 All components are docker-based
 
-### With Docker
+Basic commands
+
 
 Docker basic commands keep them handy
 
 Docker --version
 docker login
 docker search <imagename>
+
+
+### With Docker
 
 #### To start the application
 
