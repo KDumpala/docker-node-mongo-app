@@ -14,6 +14,12 @@ All components are docker-based
 
 ### With Docker
 
+Docker basic commands keep them handy
+
+Docker --version
+docker login
+docker search <imagename>
+
 #### To start the application
 
 Step 1: Create docker network
