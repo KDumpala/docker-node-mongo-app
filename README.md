@@ -37,13 +37,15 @@ Docker basic commands keep them handy
 
     docker stop contnr_ID
 
-    docker create --name image_name -- > costum name
+    docker create --name image_name --> costum name
 
     docker stop image_name
 
-    docker run --name image_name image --- > container is created, downloaded, started at the same time.
+    docker run --name image_name image --> container is created, downloaded, started at the same time.
 
-    
+    docker run -d --name image_name image --> "-d" is detached mode
+
+    docker kill contnr_name --> shutsdown the container forcefully
 
 
 
