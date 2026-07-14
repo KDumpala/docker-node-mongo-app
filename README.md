@@ -47,6 +47,12 @@ Docker basic commands keep them handy
 
     docker kill contnr_name --> shutsdown the container forcefully
 
+    docker exec -it contnr_name /bin/bash/ --> exec is for (execution) logging into the container, "-it" is for innteractive terminal. /bin/bash/ usually is works or the default for many containers
+
+    docker rm --> remove the container. it must be stopped before removing.
+
+    docker rmi img_name --> all the copntainers using that image must be stopped before removing image.
+
 
 
 
