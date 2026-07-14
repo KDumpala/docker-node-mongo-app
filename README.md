@@ -53,9 +53,14 @@ Docker basic commands keep them handy
 
     docker rmi img_name --> all the copntainers using that image must be stopped before removing image.
 
+    ####three types of network configs -- Bridge , Host and None
+
     docker network ls --> for docker network details
         docker network inspect host
         docker network inspect bridge
+    
+    docker run -d --name image_name --net host image --> sample container creation with host net config and no port specification  
+
 
 
 
