@@ -61,6 +61,8 @@ Docker basic commands keep them handy
     
     docker run -d --name image_name --net host image --> sample container creation with host net config and no port specification  
 
+    
+
 
 
 
